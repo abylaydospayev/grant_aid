@@ -68,8 +68,3 @@ Contributions to improve the system are welcome. Please follow these steps:
 
 This project is licensed under the MIT License.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/6790462/8b297dd5-277d-49b4-b4fd-2d0011dd42b3/paste.txt
-[2] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/6790462/e0eb3d04-0f27-4a09-9833-78bc3770b060/paste-2.txt
-[3] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/6790462/f5821539-d315-4cbd-922a-c7a5da95ea83/paste-3.txt
-[4] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/6790462/8fc47390-4dfb-4f2d-a314-faae1710f1fa/paste-4.txt
