@@ -1,62 +1,49 @@
-# Project: Scholarship and Donation Management System
+# Nakanishi Dental Lab File Management System
 
 ## Overview
 
-This project implements a comprehensive Scholarship and Donation Management System designed to facilitate the creation, management, and awarding of scholarships, as well as handling donations for various projects. The system caters to different user types, including donors, students, and administrators.
+The Nakanishi Dental Lab File Management System is a comprehensive tool designed to streamline file operations, case management, and monitoring for dental laboratories. This application provides an intuitive graphical user interface for efficient handling of dental case files, STL file management, and automated file monitoring.
 
-## Key Features
+## Features
 
-- **User Account Management**: Supports registration and authentication for donor and student accounts.
-- **Project Management**: Allows creation and tracking of fundraising projects.
-- **Scholarship Management**: Enables setup and management of scholarships with customizable criteria.
-- **Donation Handling**: Facilitates donation processes for both projects and scholarships.
-- **Application Review**: Provides functionality for reviewing scholarship applications.
+- **File Search**: Easily search for folders and files within a specified source directory.
+- **Case Checking**: Identify missing cases by comparing input case numbers against existing files.
+- **File Operations**: Perform various actions such as copying all files, copying STL files, and renaming structures.
+- **ZIP Extraction**: Extract ZIP files from a source directory to a target location.
+- **File Monitoring**: Automatically track file changes in a specified directory.
+- **User-Friendly Interface**: Intuitive GUI with clear sections for different functionalities.
 
-## Core Components
+## Installation
 
-### User Management
-- `AccountManager`: Handles user registration and authentication.
-- `UserAccount`: Base class for user accounts.
-- `DonorAccount`: Specialized account for donors with donation preferences.
-- `StudentAccount`: Specialized account for students with academic information.
+1. Ensure you have Python 3.x installed on your system.
+2. Install the required dependencies:
+   ```
+   pip install PyQt5 watchdog
+   ```
+3. Clone or download the repository to your local machine.
 
-### Project Management
-- `ProjectManager`: Manages the collection of fundraising projects.
-- `Project_View`: Represents individual projects with funding details.
+## Usage
 
-### Scholarship Management
-- `Scholarship`: Represents individual scholarships with criteria and applicant information.
-- `Applicant`: Represents scholarship applicants.
+1. Run the main script:
+   ```
+   python main.py
+   ```
+2. Use the interface to select source directories, perform searches, and execute file operations.
+3. Monitor the status bar for file monitoring updates and operation results.
 
-### Donation Handling
-- `Donation`: Represents individual donations with amount and donor information.
+## Key Components
 
-## User Interface
-
-The system includes several forms for user interaction:
-
-- `Form1`: Main form for user login and navigation.
-- `RegistrationForm`: Handles user registration for both donors and students.
-- `ProjectListForm`: Displays a list of available projects.
-- `ScholarshipListForm`: Shows available scholarships.
-- `DonationForm`: Facilitates the donation process.
-- `ApplicationReviewForm`: Allows review of scholarship applications.
-
-## Getting Started
-
-1. Clone the repository.
-2. Open the solution in Visual Studio.
-3. Build the solution to restore NuGet packages.
-4. Run the application.
-
-## Dependencies
-
-- .NET Framework
-- Windows Forms for the user interface
+- **MainWindow**: The primary application window containing all UI elements and core functionality.
+- **FolderSearcher**: Handles directory searches based on user input.
+- **FolderManager**: Manages folder operations like copying contents.
+- **STLFileHandler**: Specializes in STL file operations, including copying and renaming.
+- **CaseChecker**: Verifies the presence of case files and reports missing cases.
+- **ZipExtractor**: Manages the extraction of ZIP files.
+- **FileMonitorThread**: Runs a background thread for continuous file monitoring.
 
 ## Contributing
 
-Contributions to improve the system are welcome. Please follow these steps:
+Contributions to improve the Nakanishi Dental Lab File Management System are welcome. Please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature.
@@ -64,7 +51,4 @@ Contributions to improve the system are welcome. Please follow these steps:
 4. Push to the branch.
 5. Create a new Pull Request.
 
-## License
-
-This project is licensed under the MIT License.
 
